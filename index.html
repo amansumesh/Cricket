@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #16a34a, #22c55e);
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #1e293b;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1593341646782-e0b495cff86d') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #22c55e;
+            color: black;
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #22c55e;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    🏏 Cricket World
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Players</a>
+    <a href="#">Formats</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Feel the Passion of Cricket</h1>
+</section>
+
+<section class="section">
+    <h2>About Cricket</h2>
+    <p style="margin-top: 15px;">
+        Cricket is one of the most popular sports in the world, played between two teams of eleven players.
+        It combines strategy, skill, and excitement.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Formats of Cricket</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Test Cricket</h3>
+            <p>Longest format played over 5 days.</p>
+        </div>
+        <div class="card">
+            <h3>ODI</h3>
+            <p>50 overs per side, balanced format.</p>
+        </div>
+        <div class="card">
+            <h3>T20</h3>
+            <p>Fast-paced 20 overs format.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Famous Players</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Virat Kohli</h3>
+            <p>Modern-day legend with aggressive style.</p>
+        </div>
+        <div class="card">
+            <h3>Sachin Tendulkar</h3>
+            <p>God of Cricket with 100 centuries.</p>
+        </div>
+        <div class="card">
+            <h3>MS Dhoni</h3>
+            <p>Captain Cool and finisher.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Join the Fan Club</h2>
+    <p>Click below to show your love for cricket!</p>
+    <button onclick="showMessage()">Join Now</button>
+</section>
+
+<footer>
+    © 2026 Cricket World | Made with ❤️
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Welcome to the Cricket Fan Club! 🏏");
+    }
+</script>
+
+</body>
+</html>
